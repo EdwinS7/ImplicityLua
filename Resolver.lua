@@ -34,7 +34,7 @@ local function switch(case)
 end
 
 local miss_table = {}
-register_callback( "aim_hurt", function(event)
+register_callback( "aim_miss", function(event)
     local aim_player = event.aim_player
     local enemy = entity.get_entity(aim_player)
     if miss_table[entity.get_player_name(enemy)] == nil then miss_table[entity.get_player_name(enemy)] = 0 end
