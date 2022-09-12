@@ -256,7 +256,7 @@ function raytracing.ClipRayToEntity(from, to)
 end
 
 
-
+--Actual start of indicators
 local function lerp(start, vend, time)
     return start + (vend - start) * time
 end
